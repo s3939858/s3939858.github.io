@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="loop.css" />
+
+    <header><em>Loop Question:</em></header>
+
+    <style>
+      pre.loops {
+        font-weight: bold;
+        padding-left: -100px;
+      }
+    </style>
+
+    <body>
+      <main>
+        <h1>
+          "You enter a room with a witch sitting on a chair asking you a riddle"
+        </h1>
+        <div class="image">
+          <img
+            src="https://media.giphy.com/media/wl4qpVTu3se15zv6iq/giphy.gif"
+            width="500"
+            height="400"
+          />
+        </div>
+        <pre class="loops">
+            public class Salary {
+                public static void main(String[] args) {
+                   Scanner scnr = new Scanner(System.in);
+                   double startingSalary;  
+                   double salaryIncrease;    
+                   double currentSalary;     
+                   int i;                  
+             
+                   System.out.print("Enter starting Salary: ");
+                   startingSalary = scnr.nextDouble();
+             
+                   System.out.print("Enter salary increase rate: ");
+                   salaryIncrease = scnr.nextDouble();
+             
+                   currentSalary = startingSalary;
+                   for (i = 0; i < 5; ++i) {
+                      System.out.println("$" + currentSalary);
+                      currentSalary = currentSalary *  salaryIncrease
+                   }
+                }
+             }
+             
+             Q: If Starting salary  is 10000 and increase rate 2.5 what is the last two numbers outputted 
+                
+             <nav>
+              <div class="pill-nav">
+                <a href="loopqwin.html">Answer A) $156250.0 , $390625.0 </a>
+                <a href="loopqfail.html">Answer B) 100000 , 250000</a>
+                <a href="loopqfail.html">Answer C) $25000.0 , $62500.0</a>
+                <a href="loopqfail.html">Answer D) 20.0</a>
+              </div>
+                
+        </pre>
+      </main>
+    </body>
+  </head>
+</html>
