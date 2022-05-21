@@ -11,63 +11,66 @@
       href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="loop.css" />
+    <link rel="stylesheet" href="conditional.css" />
 
-    <header><em>Loop Question:</em></header>
-
+    <header><em>Conditional Question:</em></header>
     <style>
-      pre.loops {
+      pre.conditional {
         font-weight: bold;
         padding-left: -100px;
       }
     </style>
-
     <body>
       <main>
         <h1>
-          "You enter a room with a witch sitting on a chair asking you a riddle"
+          "You enter a room with a huge dragon in it, there are four weapons on
+          the floor, what weapon will you choose?"
         </h1>
         <div class="image">
           <img
-            src="https://media.giphy.com/media/wl4qpVTu3se15zv6iq/giphy.gif"
+            src="https://media.giphy.com/media/3o7TKrEzvLbsVAud8I/giphy.gif"
             width="500"
             height="400"
           />
         </div>
-        <pre class="loops">
-            public class Salary {
-                public static void main(String[] args) {
-                   Scanner scnr = new Scanner(System.in);
-                   double startingSalary;  
-                   double salaryIncrease;    
-                   double currentSalary;     
-                   int i;                  
-             
-                   System.out.print("Enter starting Salary: ");
-                   startingSalary = scnr.nextDouble();
-             
-                   System.out.print("Enter salary increase rate: ");
-                   salaryIncrease = scnr.nextDouble();
-             
-                   currentSalary = startingSalary;
-                   for (i = 0; i < 5; ++i) {
-                      System.out.println("$" + currentSalary);
-                      currentSalary = currentSalary *  salaryIncrease
-                   }
+        <pre class="conditional">
+                 public class MovieTicketPrices {
+                  public static void main(String[] args) {
+                     double baseCost = 30.0;
+                     int numPassengers;     
+                       
+                
+                     Scanner scnr = new Scanner(System.in);
+                
+                    numPassengers = scnr.nextInt();
+                
+                    if (numPassengers <= 2) {
+                          System.out.println(" Total cost: " + baseCost);
                 }
-             }
-             
-             Q: If Starting salary  is 10000 and increase rate 2.5 what is the last two numbers outputted 
+                    else if( numPassengers >= 3 && numPassengers <10){
+                         System.out.println("Total cost: " + (baseCost * 1.50));
+                }
+                    else{
+                        System.out.println("Total cost: " + (baseCost * 2.0));
+                }
                 
-             <nav>
-              <div class="pill-nav">
-                <a href="loopqwin.html">Answer A) $156250.0 , $390625.0 </a>
-                <a href="loopqfail.html">Answer B) 100000 , 250000</a>
-                <a href="loopqfail.html">Answer C) $25000.0 , $62500.0</a>
-                <a href="loopqfail.html">Answer D) 20.0</a>
-              </div>
+                }
+                }
                 
-        </pre>
+                Q: If numPassengers = 10 what is the output 
+                
+                
+              </pre>
+              <nav>
+                <div class="pill-nav">
+                  <a href="return to homescreen.html">Attack A) 60.0</a>
+                  <a href="return to homescreen.html">Attack B) 12.0</a>
+                  <a href="transitiontonextq.html">Attack C) 45.0</a>
+                  <a href="return to homescreen.html">Attack D) 37.0</a>
+                </div>
+
+                
+              
       </main>
     </body>
   </head>
